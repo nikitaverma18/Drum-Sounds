@@ -21,14 +21,14 @@ body{
 }
 
 #project-name {
-    font-size: 3 rem;
+    font-size: 3.5 rem;
     font-weight: bold;
     color: #f3e7ee;
     /* margin-top: 30%; */
 }
 
 #description {
-    font-size: 2.5rem;
+    font-size: 2 rem;
     color: #f3b455;
 }
 
