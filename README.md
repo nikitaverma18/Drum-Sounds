@@ -2,6 +2,9 @@
 
 This project is a simple interactive Drum Sounds web application, where users can play various drum sounds by pressing designated keys or hovering over images of drum components. The app is built with HTML, CSS, and JavaScript, and features a responsive layout with drum images and associated sounds for each drum type.
 
+Deployment Link You can view the live application here:
+https://lovely-lamington-54c25e.netlify.app/
+
 Features:
 1.Interactive Sound Playback: Users can play sounds by pressing specific keys (A, S, D, F, C) or by hovering over the drum images.
 2.Dynamic Animations: Button animations are triggered whenever a sound is played, providing visual feedback.
