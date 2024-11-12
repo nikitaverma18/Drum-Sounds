@@ -22,7 +22,7 @@ function playSound(key) {
             break;
         default:
             console.log("No sound mapped to this key.");
-            alert("Key not mapped to any sound!"); 
+            // alert("Key not mapped to any sound!"); 
             break;
     }
 }
