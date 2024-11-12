@@ -10,6 +10,28 @@ body{
     overflow: hidden;
 }
 
+.top-content {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+#project-name {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #f3e7ee;
+    /* margin-top: 30%; */
+}
+
+#description {
+    font-size: 2.5rem;
+    color: #f3b455;
+}
+
 .drum-container {
     position: relative;
     display: inline-block;
