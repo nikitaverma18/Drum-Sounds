@@ -1,41 +1,52 @@
-body{
+/* General styles */
+body {
     background-image: url("Drum-BG.webp");
     background-size: cover;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
-    height: 100vh; 
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
+    padding: 20px; /* Added padding for spacing on smaller screens */
     overflow: hidden;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
 }
 
+/* Centered content with spacing adjustments */
 .top-content {
+    display: flex;
     position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     color: white;
     z-index: 10;
+    top: 2%;
+    margin-bottom: 1rem;
+    padding-top: 20px; /* Added padding for spacing from the top */
 }
 
 #project-name {
-    font-size: 3.5 rem;
+    font-size: 3.5rem;
     font-weight: bold;
-    color: #f3e7ee;
-    /* margin-top: 30%; */
+    color: #da1c5e;
+    margin-bottom: 0.5rem;
 }
 
 #description {
-    font-size: 2 rem;
-    color: #f3b455;
+    font-size: 2.5rem;
+    color: #f1b752;
+    margin-top: 0;
 }
 
+/* Drum container styling */
 .drum-container {
-    position: relative;
     display: inline-block;
     text-align: center;
+    margin-top: 10px;
+    position: relative;
 }
 
 .drum-letter {
@@ -43,32 +54,91 @@ body{
     top: -10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-    pointer-events: none; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    pointer-events: none;
 }
 
+/* Drum set responsiveness */
 .drum-set {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    position: relative;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
+/* Drum image styling */
 .drum-image {
-    width: 250px;
-    height: 170px;
+    width: 200px;
+    height: 140px;
     cursor: pointer;
     border-radius: 10px;
     transition: transform 0.1s ease;
     margin-top: 20px;
-    border: 5px solid rgb(213, 27, 126); 
+    border: 5px solid rgb(213, 27, 126);
 }
 
 .drum-image.active {
     transform: scale(1.1);
     box-shadow: 0 0 20px yellow;
+}
+
+/* Responsive styling for different screen sizes */
+
+
+
+@media (max-width: 1112px) {
+    body {
+        padding: 10px;
+    }
+
+    #project-name {
+        font-size: 2.3rem;
+    }
+
+    #description {
+        font-size: 2rem;
+    }
+
+    .drum-image {
+        width: 150px;
+        height: 110px;
+    }
+
+    .drum-set {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    #project-name {
+        font-size: 2.1rem;
+    }
+
+    #description {
+        font-size: 1.5rem;
+    }
+
+    .drum-image {
+        width: 120px;
+        height: 90px;
+    }
+
+    .drum-set {
+        gap: 10px;
+    }
+    
+    /* Stack top-content and drum set on smaller screens */
+    .top-content, .drum-set {
+        width: 100%;
+        padding: 0 10px;
+    }
 }
